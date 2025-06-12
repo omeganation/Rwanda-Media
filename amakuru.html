@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="rw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GistRwanda | Amakuru agezweho mu Rwanda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="breaking-label">ICYUMVIRO:</div>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker-item">Umukinnyi X yisekuwe n'umukobwa we!</div>
+                <div class="ticker-item">Perezida Kagame yagize icyo avuga ku mihindagurikire</div>
+                <div class="ticker-item">Urukundo rw'abakinnyi: Hari ibyo batubwiye!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="GistRwanda Logo">
+                <span>Gist<span>Rwanda</span></span>
+            </div>
+
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Ahabanza</a></li>
+                    <li><a href="amakuru.html" class="active">Amakuru</a></li>
+                    <li><a href="imikino.html">Imikino</a></li>
+                    <li><a href="gossip.html">Gossip</a></li>
+                    <li><a href="ibikorwa.html">Ibikorwa</a></li>
+                    <li><a href="itangazo.html">Itangazo</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="language-switcher">
+                    <span class="current-lang">KIN</span>
+                    <ul class="lang-dropdown">
+                        <li><a href="index.html" hreflang="rw" lang="rw">Kinyarwanda</a></li>
+                        <li><a href="en/index.html" hreflang="en" lang="en">English</a></li>
+                        <li><a href="fr/index.html" hreflang="fr" lang="fr">Français</a></li>
+                        <li><a href="sw/index.html" hreflang="sw" lang="sw">Swahili</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com/GistRwanda" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/GistRwanda" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/GistRwanda" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/250788123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <!-- Same header as index.html but with "Amakuru" active -->
+        <header>
+            <!-- ... -->
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Ahabanza</a></li>
+                    <li><a href="amakuru.html" class="active">Amakuru</a></li>
+                    <!-- ... -->
+                </ul>
+            </nav>
+            <!-- ... -->
+        </header>
+
+        <main>
+            <section class="category-news">
+                <h1 class="page-title">Amakuru</h1>
+
+                <div class="category-filter">
+                    <a href="#" class="active">Byose</a>
+                    <a href="politiki.html">Politiki</a>
+                    <a href="ubukungu.html">Ubukungu</a>
+                    <a href="ubuzima.html">Ubuzima</a>
+                    <a href="umuco.html">Umuco</a>
+                </div>
+
+                <div class="news-grid">
+                    <!-- News articles specific to general news -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/400x225?text=Politiki" alt="Politiki">
+                            <span class="category-tag news">Politiki</span>
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="article.html">Minisitiri w'Ubutegetsi yatangaje ingamba nshya</a></h3>
+                            <p class="excerpt">Mu nama y'abanyamakuru, Minisitiri X yavuze ko hazatangwa ingamba nshya
+                                zo...</p>
+                            <div class="news-meta">
+                                <span class="date"><i class="far fa-clock"></i> 3h ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More news articles... -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Same footer as index.html -->
+    </body>
+
+</html>

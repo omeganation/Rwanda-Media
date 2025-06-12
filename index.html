@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="rw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GistRwanda | Amakuru agezweho mu Rwanda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add these for animations and tooltips -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="breaking-label">ICYUMVIRO:</div>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker-item">Umukinnyi X yisekuwe n'umukobwa we!</div>
+                <div class="ticker-item">Perezida Kagame yagize icyo avuga ku mihindagurikire</div>
+                <div class="ticker-item">Urukundo rw'abakinnyi: Hari ibyo batubwiye!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="GistRwanda Logo">
+                <span>Gist<span>Rwanda</span></span>
+            </div>
+
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="active">Ahabanza</a></li>
+                    <li><a href="amakuru.html">Amakuru</a></li>
+                    <li><a href="imikino.html">Imikino</a></li>
+                    <li><a href="gossip.html">Gossip</a></li>
+                    <li><a href="ibikorwa.html">Ibikorwa</a></li>
+                    <li><a href="itangazo.html">Itangazo</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <div class="language-switcher">
+                    <span class="current-lang">KIN</span>
+                    <ul class="lang-dropdown">
+                        <li><a href="index.html" hreflang="rw" lang="rw">Kinyarwanda</a></li>
+                        <li><a href="en/index.html" hreflang="en" lang="en">English</a></li>
+                        <li><a href="fr/index.html" hreflang="fr" lang="fr">Français</a></li>
+                        <li><a href="sw/index.html" hreflang="sw" lang="sw">Swahili</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com/GistRwanda" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/GistRwanda" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/GistRwanda" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/250788123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" class="active">Ahabanza</a></li>
+            <li><a href="amakuru.html">Amakuru</a></li>
+            <li><a href="imikino.html">Imikino</a></li>
+            <li><a href="gossip.html">Gossip</a></li>
+            <li><a href="ibikorwa.html">Ibikorwa</a></li>
+            <li><a href="itangazo.html">Itangazo</a></li>
+        </ul>
+        <div class="mobile-lang-switcher">
+            <a href="index.html" hreflang="rw" lang="rw">Kinyarwanda</a>
+            <a href="en/index.html" hreflang="en" lang="en">English</a>
+            <a href="fr/index.html" hreflang="fr" lang="fr">Français</a>
+            <a href="sw/index.html" hreflang="sw" lang="sw">Swahili</a>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="featured-news">
+            <h2 class="section-title">
+                <span>Amakuru agezweho</span>
+            </h2>
+
+            <div class="news-grid">
+                <!-- Featured News 1 -->
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="images/mission5.jpeg" alt="Umukinnyi X yisekuwe">
+                        <span class="category-tag gossip">Gossip</span>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="article.html">Umukinnyi X yisekuwe n'umukobwa we! (Amashusho)</a></h3>
+                        <p class="excerpt">Mu mashusho y'uko ubu, umukinnyi wa filimi X yagaragaye mu isoko afatanyije
+                            n'umukobwa mushya. Abakunzi baravuze ko...</p>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-clock"></i> 2h ago</span>
+                            <span class="comments"><a href="article.html#comments"><i class="far fa-comment"></i>
+                                    24</a></span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured News 2 -->
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="images/cap12.jpg" alt="Perezida Kagame">
+                        <span class="category-tag news">Amakuru</span>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="article.html">Perezida Kagame yagize icyo avuga ku mihindagurikire y'ikirere</a>
+                        </h3>
+                        <p class="excerpt">Mu nama y'abanyeshuri, Perezida Kagame yavuze ko ihindagurika ry'ikirere ari
+                            ikibazo gikomeye cyane...</p>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-clock"></i> 5h ago</span>
+                            <span class="comments"><a href="article.html#comments"><i class="far fa-comment"></i>
+                                    42</a></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="regular-news">
+            <div class="news-grid">
+                <!-- Regular News 1 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/astrix.jpg" alt="Urukundo">
+                        <span class="category-tag gossip">Gossip</span>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="article.html">Urukundo rw'abakinnyi: Hari ibyo batubwiye!</a></h3>
+                        <p class="excerpt">Abakinnyi X na Y bavuze ko bafite ubucuti bugeze aho, ariko banga kwemeza ko
+                            ari urukundo...</p>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-clock"></i> 8h ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular News 2 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/astrix.jpg" alt="Imikino">
+                        <span class="category-tag sports">Imikino</span>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="article.html">APR yatsinze Rayon Sports 2-0 mu mukino w'icyumweru</a></h3>
+                        <p class="excerpt">Mu mukino wari ugamije kumara igihe, APR yatsinze Rayon Sports 2-0. Abakinnyi
+                            X na Y ni bo bari...</p>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-clock"></i> 1d ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sponsored News -->
+                <article class="news-card sponsored">
+                    <div class="news-image">
+                        <img src="images/nosponsored.jpg" alt="Sponsored">
+                        <span class="category-tag sponsored">SPONSORED</span>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="sponsor.html">Kuraburuga Gutanga Serivisi! 🎤</a></h3>
+                        <p class="excerpt">Uburyohe bw'ubucuruzi bwa X bwongereye 20% mu kwezi. Kanda hano urebe
+                            amafaranga...</p>
+                        <div class="news-meta">
+                            <span class="date"><i class="fas fa-ad"></i> <a href="sponsor.html"
+                                    style="color: var(--sponsored);">Ad</a></span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- More news cards... -->
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h3>Kwakira Amakuru ku wa Mbere!</h3>
+                    <p>Andika email yawe kugirango wakire amakuru mashya buri munsi.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Andika email yawe" required>
+                    <button type="submit">Emeza <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="GistRwanda Logo">
+                    <span>Gist<span>Rwanda</span></span>
+                </div>
+                <p>GistRwanda ni urubuga rw'amakuru agezweho mu Rwanda, duha abantu amakuru y'ubuzima, imikino, gossip
+                    n'ibindi.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/GistRwanda" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/GistRwanda" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/GistRwanda" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/GistRwanda" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Amakuru</h4>
+                <ul>
+                    <li><a href="politiki.html">Politiki</a></li>
+                    <li><a href="ubukungu.html">Ubukungu</a></li>
+                    <li><a href="ubuzima.html">Ubuzima</a></li>
+                    <li><a href="umuco.html">Umuco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Imikino</h4>
+                <ul>
+                    <li><a href="football.html">Football</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="volleyball.html">Volleyball</a></li>
+                    <li><a href="ibindi.html">Ibindi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Twandikire</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:email@gistrwanda.rw">email@gistrwanda.rw</a>
+                    </li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+250788123456">+250 793 748 035</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Kigali,Rwanda"
+                            target="_blank">Kigali, Rwanda</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 GistRwanda. Byose ni ibyacu.</p>
+            <ul>
+                <li><a href="amategeko.html">Amategeko</a></li>
+                <li><a href="ibanga.html">Politiki y'ibanga</a></li>
+                <li><a href="twandikire.html">Twandikire</a></li>
+                <li><a href="abanyamuryango.html">Abanyamuryango</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
